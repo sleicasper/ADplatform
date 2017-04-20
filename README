@@ -1,0 +1,26 @@
+general_init_vps.sh	Setup Basic Environment
+initADenviron.sh	Initialise Attack Defence Environment, running this script will cause vps reboot
+DBinit.sh		Initialise Database and Website
+build.sh		Initialise Services
+run.sh			Start Capture Network Flow, Update Flags and Update Scores Scripts
+capturepackages.sh	Capture Pcaps
+clean.sh		Clean All Services
+DBinit.sh		Database Initialization
+move.sh			Copy html Directory to /var/www/html/
+push.php		Websocket Push Service
+updateflag.sh		
+updatescore.sh
+
+
+
+####################################################################
+Usage:
+	1. run general_init_vps.sh. It's basic script
+	2. run initADenviron.sh, setup Attack Defence Environment(such as xinetd)
+	3. edit mysqlpass.txt with root password
+	4. run DBinit.sh. It's setup database.
+	5. wait for players to register
+	6. copy binaries to bin directory and edit service.txt configure file, put checker script in check directory
+	7. run build.sh to create users and services
+	8. if you want to clean this Attack Defence Competition, run clean.sh script
+
